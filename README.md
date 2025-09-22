@@ -24,11 +24,12 @@ Gebruik het meegeleverde `requirements.txt` bestand:
 
 ```bash
 pip install -r requirements.txt
-
+```
 Handmatig installeren kan ook:
 
 ```bash
 pip install selenium gspread oauth2client plotly
+```
 
 --- 
 
