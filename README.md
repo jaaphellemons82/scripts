@@ -66,3 +66,62 @@ Hierin staat de login- en teamconfiguratie:
     }
   ]
 }
+```
+
+git_config.py
+
+Bevat de GitHub configuratie voor automatisch uploaden:
+```python
+GIT_REPO_PATH = r"C:/Data/git/scripts"
+GIT_BRANCH = "main"
+GITHUB_USERNAME = "jouw-gebruikersnaam"
+GITHUB_PAT = "github_pat_xxx"
+GITHUB_REPO = "voetbal-scripts"
+```
+
+## 🚀 Gebruik
+1. Voetbal.nl scraper starten
+```bash
+python get-data.py
+```
+- Opent Chrome
+- Logt in op voetbal.nl
+- Scrapet uitslagen & programma
+- Schrijft nieuwe wedstrijden en tegenstanders naar Google Sheets
+
+2. Topscorers genereren
+```bash
+python topscorers_plot.py
+```
+- Leest data uit Google Sheet
+- Genereert interactieve HTML (topscorers_plot.html)
+- Uploadt automatisch naar GitHub
+
+## 📂 Belangrijke bestanden
+
+- get-data.py → scraper voor voetbal.nl
+- topscorers_plot.py → genereert HTML grafieken
+- config.json → configuratie per team
+- git_config.py → GitHub instellingen
+- credentials.json → Google API credentials
+- dselogo.png → clublogo (wordt in de HTML getoond)
+- assets/screenshot.png → voorbeeldweergave van de HTML pagina
+
+## 📱 Mobiele weergave
+
+- Grafieken schalen automatisch mee
+- Tabel kan horizontaal gescrold worden
+- Extra witruimte tussen secties voor betere leesbaarheid
+
+## ✅ Checklist voor nieuwe pc
+
+ - Python geïnstalleerd
+ - Chrome + juiste ChromeDriver geïnstalleerd
+ - Git geïnstalleerd
+ - Dependencies geïnstalleerd met pip install -r requirements.txt
+ - credentials.json toegevoegd
+ - Google Sheet gedeeld met service account
+ - config.json en git_config.py ingevuld
+ - Scripts starten met python get-data.py en python topscorers_plot.py
+
+ ⚽ Klaar! Met deze setup kun je het project overal draaien en automatisch je topscorers publiceren.
