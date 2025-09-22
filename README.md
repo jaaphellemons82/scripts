@@ -57,8 +57,8 @@ Hierin staat de login- en teamconfiguratie:
   "teams": [
     {
       "name": "JO13-1",
-      "username": "voorbeeld@dse.nl",
-      "password": "geheim",
+      "username": "xxxxxxx",
+      "password": "xxxxxxx",
       "spreadsheet_id": "xxxxxxxxxxxxxxxxxxxx",
       "sheet_name_uitslagen": "Uitslagen",
       "sheet_name_aanwezigheid": "Aanwezigheid",
